@@ -1,28 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "services": {
-    "app": {
-      "root": ".",
-      "framework": "vite"
-    },
-    "proxy": {
-      "root": "local-proxy",
-      "runtime": "node",
-      "entrypoint": "server.js"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/proxy/(.*)",
-      "destination": {
-        "service": "proxy"
-      }
-    },
-    {
-      "source": "/(.*)",
-      "destination": {
-        "service": "app"
-      }
-    }
-  ]
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "."
 }
